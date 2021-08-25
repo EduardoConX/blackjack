@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="min-h-screen">
 
 <head>
     <meta charset="UTF-8">
@@ -10,11 +10,11 @@
     <title>21 Blackjack</title>
 </head>
 
-<body>
+<body class="min-h-screen">
     <header class="absolute top-0 w-full bg-black p-4 text-center">
         <h1 class="text-3xl text-white">21 Blackjack</h1>
     </header>
-    <main class="mt-16 p-4 bg-green-500">
+    <main class="pt-16 p-4 bg-green-500 min-h-screen">
         <section class="flex justify-center" id="botones">
             <button id="btnNuevoJuego" class="mx-4 py-2 px-4 bg-blue-500 rounded-md text-white hover:bg-blue-700">Nuevo juego</button>
             <button id="btnPedirCarta" class="mx-4 py-2 px-4 bg-blue-500 rounded-md text-white hover:bg-blue-700">Pedir carta</button>
@@ -24,7 +24,7 @@
             <h2 class="text-2xl text-white mb-4 font-bold">Jugador 1
                 <small class="ml-4 text-base font-normal">0</small>
             </h2>
-            <div id="cartas-jugador" class="h-64">
+            <div id="cartas-jugador" class="h-64 cartas">
                 <!-- <img class="w-40 relative left-48 -ml-20 inline" src="assets/cartas/2C.png"> -->
             </div>
         </section>
@@ -33,13 +33,13 @@
             <h2 class="text-2xl text-white mb-4 font-bold">Computadora
                 <small class="ml-4 text-base font-normal">0</small>
             </h2>
-            <div id="cartas-computadora" class="h-64">
+            <div id="cartas-computadora" class="h-64 cartas">
                 <!-- <img class="w-40 relative left-48 -ml-20 inline" src="assets/cartas/3C.png"> -->
             </div>
         </section>
     </main>
     <script src="assets/js/underscore-min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app-min.js"></script>    
 </body>
 
 </html>
